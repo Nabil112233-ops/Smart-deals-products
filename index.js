@@ -9,7 +9,6 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
-// const uri = "mongodb+srv://smartdbUser:gXX087TNDrIVoXpp@claster0.gvvglyb.mongodb.net/?appName=Claster0";
 const uri = process.env.Mongo_URI;
 
 const client = new MongoClient(uri, {
